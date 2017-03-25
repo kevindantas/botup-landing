@@ -16,6 +16,47 @@ a {
 
 .button {
   display: inline-block;
-  box-shadow: 3px 5px 10px rgba(0,0,0,.2);
+  box-shadow: 2px 3px 7px rgba(0,0,0,.2);
   padding: 14px 24px;
+}
+
+
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding: 0 40px;
+}
+
+header nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+header ul {
+  list-style: none;
+  display: flex;
+}
+
+header ul li a {
+  padding: 8px 16px;
+}
+
+header + * {
+  padding-top: 60px;
+}
+
+
+section#banner {
+  width: 100vw;
+  height: 70vh;
+  text-align: center;
+  box-shadow: 2px 3px 40px rgba(0,0,0,.15);
+}
+
+
+section#banner h1 {
+  font-weight: lighter;
 }
