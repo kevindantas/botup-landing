@@ -156,6 +156,7 @@ section h1 {
   color: #fff;
   text-align: right;
   text-transform: uppercase;
+  font-weight: 300;
 }
 
 section figure {
@@ -209,4 +210,22 @@ section figure img {
 .active.fp-completely figure {
   opacity: 1;
   transform: none;
+}
+
+#equipe { text-align: center; }
+#equipe ul {
+  display: flex;
+
+}
+
+#equipe ul li {
+  max-width: 20%;
+  flex: 20% 0 0;
+  list-style: none;
+  padding: 16px;
+}
+
+#equipe ul li img {
+  width: 100%;
+  border-radius: 1000px;
 }
