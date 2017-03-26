@@ -165,7 +165,7 @@ section figure {
   border-radius: 1000px;
   box-shadow: 3px 3px 20px rgba(0,0,0,.2);
   flex-shrink: 0;
-  margin-right: 24px;
+  margin: 24px;
 }
 
 .row {
@@ -182,4 +182,31 @@ section figure {
 
 section figure img {
   width: 100%;
+}
+
+.container {
+  max-width: 960px;
+  margin: auto;
+  color: #fff;
+}
+
+.container p {
+  font-weight: 300;
+}
+
+
+.fp-section.fp-table p,
+.fp-section.fp-table h1,
+.fp-section.fp-table figure {
+  opacity: 0;
+  transform: translateY(-50px);
+  transition: 0.4s cubic-bezier(0.07, 0.04, 0.6, 1.07);
+  will-change: transform;
+}
+
+.active.fp-completely p,
+.active.fp-completely h1,
+.active.fp-completely figure {
+  opacity: 1;
+  transform: none;
 }

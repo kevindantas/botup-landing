@@ -1,79 +1,108 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta charset="utf-8">
-    <title>BotUp</title>
-    <link href="https://fonts.googleapis.com/css?family=Rubik:400,500,700" rel="stylesheet">
-    <link rel="stylesheet" href="css/jquery.fullPage.css">
-    <link rel="stylesheet" href="css/style.css">
-  </head>
-  <body>
-    <header>
-      <nav id="navbar">
-        <a href="#" class="logo"><img src="img/logo.svg" alt="BotUp"></a> <!-- VAI VIRAR IMG -->
-        <ul id="mainMenu">
-          <li><a href="#">Como funciona</a></li>
-          <li><a href="#">Facebook</a></li>
-        </ul>
-      </nav>
-    </header>
-    <main id="fullpage">
-      <section id="banner" class="section">
-        <h1>Construir uma Startup nunca foi tão fácil!</h1>
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="utf-8">
+  <title>BotUp</title>
+  <link href="https://fonts.googleapis.com/css?family=Rubik:300,400,500,700" rel="stylesheet">
+  <link rel="stylesheet" href="css/jquery.fullPage.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <header>
+    <nav id="navbar">
+      <a href="#" class="logo"><img src="img/logo.svg" alt="BotUp"></a>
+      <!-- VAI VIRAR IMG -->
+      <ul id="mainMenu">
+        <li><a href="#">Como funciona</a></li>
+        <li><a href="#">Facebook</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main id="fullpage">
+    <section id="banner" class="section">
+      <div class="container">
+        <h1>Que tal abrir seu negócio? É só dizer oi ;)</h1>
         <div id="device">
           <video id="video" src="img/video.mp4" autoplay></video>
           <img src="img/iphone.svg" alt="Imagem de celular com o chat aberto" id="deviceFrame">
         </div>
-      </section>
+      </div>
+    </section>
 
-      <section id="quickDescription" class="section">
-        <h1>A ideia</h1>
+    <section id="quickDescription" class="section">
+      <div class="container">
 
         <div class="row">
           <figure>
             <img src="img/idea.svg" alt="idea.svg">
           </figure>
+          <div>
+            <h1>Ideia</h1>
 
-          <p>As pessoas têm ideias todos os dias, sejam elas boas ou não, é fato que querem que tudo saia do papel. Muitos desistem devido a falta de conhecimento em toda a documentação necessária para criar uma Startup, mesmo que seja simples as pessoas têm medo apenas de imaginar que é um processo muito demorado.</p>
+            <p>Tudo começa com sua ideia, conte-a para o BotUp.</p>
+          </div>
         </div>
+      </div>
+    </section>
 
-      </section>
+    <section id="first" class="section">
+      <div class="container">
+        <div class="row">
+          <div>
+            <h1>Facilitador</h1>
+            <p>Converse com ele e faça seu planejamento em poucos minutos.</p>
+          </div>
 
-      <section id="first" class="section">
-        <h2>Construir uma startup nunca foi fácil</h2>
-        <h4>A não ser que você tenha um mentor 24/7</h4>
-        <p>Quantas vezes você já teve uma ótima ideia para empeender e não sabia como viabilizá-la? Todo o trabalho de pesquisa para elaborar coisas como Canvas e Análise de mercado é muito grande.</p>
-      </section>
+          <figure>
+            <img src="img/idea.svg" alt="Idea">
+          </figure>
+        </div>
+      </div>
+    </section>
 
-      <section id="data" class="section">
-        <h2>As pessoas realmente sofrem com isso</h2>
-        <h4>E inclusive é um dos maiores desafios de consultorias em Startups</h4>
-        <p>E se pudéssemos simplificar o processo de criação de uma Startup?</p>
-      </section>
+    <section id="data" class="section">
+      <div class="container">
+        <div class="row">
+          <figure>
+            <img src="img/idea.svg" alt="Idea">
+          </figure>
+          <div>
 
-      <section id="solution" class="section">
+          <h1>Te ajudamos </h1>
+          <p>E se pudéssemos simplificar o processo de criação de uma Startup?</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="solution" class="section">
+      <div class="container">
         <h2>Apresentamos o BotUp</h2>
         <p>O BotUp será seu mentor e irá auxiliá-lo na criação de sua startup, desde o Canvas até o Pitch!</p>
-      </section>
+      </div>
+    </section>
 
-    </main>
-    <script src="js/jquery-3.2.0.min.js" charset="utf-8"></script>
-    <script src="js/jquery.fullPage.min.js" charset="utf-8"></script>
-    <script type="text/javascript">
-      $(document).ready(function() {
-        $('#fullpage').fullpage({
-          //Navigation
-      		anchors:['firstPage', 'secondPage'],
-      		navigation: true,
-      		navigationPosition: 'right',
-      		navigationTooltips: ['Início', 'Resumo', 'O problema', 'O propósito', 'A solução'],
-        });
+  </main>
+  <script src="js/jquery-3.2.0.min.js" charset="utf-8"></script>
+  <script src="js/jquery.fullPage.min.js" charset="utf-8"></script>
+  <script type="text/javascript">
+    $(document).ready(function () {
+      $('#fullpage').fullpage({
+        //Navigation
+        anchors: ['firstPage', 'secondPage'],
+        navigation: true,
+        navigationPosition: 'right',
+        navigationTooltips: ['Início', 'Resumo', 'O problema', 'O propósito', 'A solução'],
       });
-      var video = document.getElementById('video');
-      setTimeout(function() {
-        video.play()
-      }, 300);
-    </script>
-  </body>
+    });
+    var video = document.getElementById('video');
+    setTimeout(function () {
+      video.play()
+    }, 300);
+  </script>
+</body>
+
 </html>
