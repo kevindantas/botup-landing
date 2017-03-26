@@ -115,7 +115,15 @@ a {
   width: 336px;
   overflow: hidden;
   margin: auto;
-  animation: slideUp 0.4s ease-in;
+}
+
+.fp-section.fp-table #device {
+  transform: translateY(490px);
+  transition: 0.6s cubic-bezier(0.07, 0.04, 0.6, 1.07);  
+}
+
+.active.fp-completely #device {
+  transform: none;
 }
 
 #device video {
@@ -224,8 +232,8 @@ section figure img {
 .fp-section.fp-table .figure-wrapper:nth-child(2) { transition-delay: 0.2s }
 .fp-section.fp-table .figure-wrapper:nth-child(3) { transition-delay: 0.4s }
 
-.fp-section.fp-table:not(#banner) .h1 { transition-delay: 0.2s }
-.fp-section.fp-table:not(#banner) .p { transition-delay: 0.2s }
+.fp-section.fp-table h1 { transition-delay: 0.2s }
+.fp-section.fp-table p { transition-delay: 0.2s }
 
 .active.fp-completely p,
 .active.fp-completely h1,
@@ -265,4 +273,8 @@ figure figcaption {
   max-width: 30%;
   margin: 0.5%;
   text-align: center;
+}
+
+#fp-nav ul li a span, .fp-slidesNav ul li a span {
+  background: #fff;
 }
