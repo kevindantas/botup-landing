@@ -169,6 +169,7 @@ section figure {
   box-shadow: 3px 3px 20px rgba(0,0,0,.2);
   flex-shrink: 0;
   margin: 24px;
+  position: relative;
 }
 
 .row {
@@ -200,6 +201,7 @@ section figure img {
 
 .fp-section.fp-table p,
 .fp-section.fp-table h1,
+.fp-section.fp-table li,
 .fp-section.fp-table figure {
   opacity: 0;
   transform: translateY(-50px);
@@ -207,8 +209,14 @@ section figure img {
   will-change: transform;
 }
 
+.fp-section.fp-table li:nth-child(2) { transition-delay: 0.2s }
+.fp-section.fp-table li:nth-child(3) { transition-delay: 0.4s }
+.fp-section.fp-table li:nth-child(4) { transition-delay: 0.6s }
+.fp-section.fp-table li:nth-child(5) { transition-delay: 0.8s }
+
 .active.fp-completely p,
 .active.fp-completely h1,
+.active.fp-completely li,
 .active.fp-completely figure {
   opacity: 1;
   transform: none;
@@ -230,4 +238,17 @@ section figure img {
 #equipe ul li img {
   width: 100%;
   border-radius: 1000px;
+}
+
+
+figure figcaption {
+  position: absolute;
+}
+
+.figure-wrapper {
+  flex-grow: 0;
+  flex-shrink: 0;
+  max-width: 30%;
+  margin: 0.5%;
+  text-align: center;
 }
