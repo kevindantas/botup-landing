@@ -112,7 +112,7 @@ a {
 
 #device {
   position: relative;
-  width: 336px;
+  width: 250px;
   overflow: hidden;
   margin: auto;
 }
@@ -129,9 +129,9 @@ a {
 #device video {
   position: absolute;
   z-index: 6;
-  top: 94px;
-  left: 25px;
-  width: 286px;
+  top: 70px;
+  left: 19px;
+  width: 211px;
 }
 
 @keyframes slideUp {
@@ -141,7 +141,7 @@ a {
 
 #deviceFrame {
   /*transform: translate3d(0, 15%, 0);*/
-  width: 336px;
+  width: 100%;
   position: relative;
   z-index: 0;
 }
@@ -151,7 +151,7 @@ a {
   padding-bottom: 20px;
   text-align: center;
   text-transform: none;
-  padding-top: 250px;
+  padding-top: 87px;
 }
 
 #banner h1 + a {
