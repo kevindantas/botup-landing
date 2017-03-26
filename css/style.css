@@ -72,6 +72,7 @@ a {
 #banner {
   height: 100vh;
   background: #024A5E;
+  overflow: hidden;
 }
 
 #banner > div {
