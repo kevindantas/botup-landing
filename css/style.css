@@ -252,3 +252,7 @@ figure figcaption {
   margin: 0.5%;
   text-align: center;
 }
+
+#fp-nav ul li a span, .fp-slidesNav ul li a span {
+  background: #fff;
+}
