@@ -4,27 +4,57 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta charset="utf-8">
     <title>BotUp</title>
+    <link href="https://fonts.googleapis.com/css?family=Rubik" rel="stylesheet">
+    <link rel="stylesheet" href="/css/jquery.fullPage.css">
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
     <header>
-      <nav>
-        <ul>
+      <nav id="navbar">
+        <h2>BotUp</h2> <!-- VAI VIRAR IMG -->
+        <ul id="mainMenu">
           <li><a href="#">Como funciona</a></li>
           <li><a href="#">Facebook</a></li>
         </ul>
       </nav>
     </header>
+    <div id="fullpage">
+      <section id="banner" class="section">
+        <h1>Lorem ipsum dolor sit amet, consectetur adipisicing</h1>
 
+        <a href="#" class="button round" id="moreButton">Saiba mais</a>
 
-    <section id="banner">
-      <h1>Lorem ipsum dolor sit amet, consectetur adipisicing</h1>
+        <img src="img/iphone.svg" alt="Imagem de celular com o chat aberto" id="deviceFrame">
+      </section>
 
-      <a href="#" class="button round">Saiba mais</a>
-    </section>
+      <section id="quickDescription" class="section">
+        <h2>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo ab nostrum quisquam omnis est, tenetur, ratione cupiditate doloremque quo rerum asperiores magni, minus eaque molestiae consequuntur perferendis dolore quae eos!</h2>
+      </section>
 
-    <main>
+      <main id="main" class="section">
+        <h2>Construir uma startup nunca foi fácil</h2>
+        <h4>A não ser que você tenha um mentor 24/7</h4>
+        <p>Quantas vezes você já teve uma ótima ideia para empeender e não sabia como viabilizá-la? Todo o trabalho de pesquisa para elaborar coisas como Canvas e Análise de mercado é muito grande.</p>
+      </main>
 
-    </main>
+      <section id="data" class="section">
+        <h2>As pessoas realmente sofrem com isso</h2>
+        <h4>E inclusive é um dos maiores desafios de consultorias em Startups</h4>
+        <p>E se pudéssemos simplificar o processo de criação de uma Startup?</p>
+      </section>
+
+      <section id="solution" class="section">
+        <h2>Apresentamos o BotUp</h2>
+        <p>O BotUp será seu mentor e irá auxiliá-lo na criação de sua startup, desde o Canvas até o Pitch!</p>
+      </section>
+
+    </div>
+    <script src="js/jquery-3.2.0.min.js" charset="utf-8"></script>
+    <script src="js/jquery.fullPage.min.js" charset="utf-8"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $('#fullpage').fullpage();
+      });
+    </script>
   </body>
 </html>
