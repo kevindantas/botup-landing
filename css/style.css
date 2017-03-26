@@ -117,12 +117,26 @@ a {
   margin: auto;
 }
 
+.fp-section.fp-table #device {
+  transform: translateY(490px);
+  transition: 0.6s cubic-bezier(0.07, 0.04, 0.6, 1.07);  
+}
+
+.active.fp-completely #device {
+  transform: none;
+}
+
 #device video {
   position: absolute;
   z-index: 6;
   top: 94px;
   left: 25px;
   width: 286px;
+}
+
+@keyframes slideUp {
+  0% { transform: translateY(490px) }
+  100% { transform: none }
 }
 
 #deviceFrame {
@@ -202,6 +216,7 @@ section figure img {
 .fp-section.fp-table p,
 .fp-section.fp-table h1,
 .fp-section.fp-table li,
+.fp-section.fp-table .figure-wrapper,
 .fp-section.fp-table figure {
   opacity: 0;
   transform: translateY(-50px);
@@ -214,9 +229,16 @@ section figure img {
 .fp-section.fp-table li:nth-child(4) { transition-delay: 0.6s }
 .fp-section.fp-table li:nth-child(5) { transition-delay: 0.8s }
 
+.fp-section.fp-table .figure-wrapper:nth-child(2) { transition-delay: 0.2s }
+.fp-section.fp-table .figure-wrapper:nth-child(3) { transition-delay: 0.4s }
+
+.fp-section.fp-table h1 { transition-delay: 0.2s }
+.fp-section.fp-table p { transition-delay: 0.2s }
+
 .active.fp-completely p,
 .active.fp-completely h1,
 .active.fp-completely li,
+.active.fp-completely .figure-wrapper,
 .active.fp-completely figure {
   opacity: 1;
   transform: none;
