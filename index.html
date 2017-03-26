@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <title>BotUp</title>
     <link href="https://fonts.googleapis.com/css?family=Rubik:400,500,700" rel="stylesheet">
-    <link rel="stylesheet" href="/css/jquery.fullPage.css">
+    <link rel="stylesheet" href="css/jquery.fullPage.css">
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
@@ -18,13 +18,13 @@
         </ul>
       </nav>
     </header>
-    <div id="fullpage">
+    <main id="fullpage">
       <section id="banner" class="section">
-        <h1>Lorem ipsum dolor sit amet, consectetur adipisicing</h1>
-
-        <a href="#" class="button round" id="moreButton">Saiba mais</a>
-
-        <img src="img/iphone.svg" alt="Imagem de celular com o chat aberto" id="deviceFrame">
+        <h1>Construir uma Startup nunca foi tão fácil!</h1>
+        <div id="device">
+          <video id="video" src="img/video.mp4" autoplay></video>
+          <img src="img/iphone.svg" alt="Imagem de celular com o chat aberto" id="deviceFrame"> 
+        </div>
       </section>
 
       <section id="quickDescription" class="section">
@@ -40,11 +40,11 @@
         
       </section>
 
-      <main id="main" class="section">
+      <section id="first" class="section">
         <h2>Construir uma startup nunca foi fácil</h2>
         <h4>A não ser que você tenha um mentor 24/7</h4>
         <p>Quantas vezes você já teve uma ótima ideia para empeender e não sabia como viabilizá-la? Todo o trabalho de pesquisa para elaborar coisas como Canvas e Análise de mercado é muito grande.</p>
-      </main>
+      </section>
 
       <section id="data" class="section">
         <h2>As pessoas realmente sofrem com isso</h2>
@@ -57,13 +57,23 @@
         <p>O BotUp será seu mentor e irá auxiliá-lo na criação de sua startup, desde o Canvas até o Pitch!</p>
       </section>
 
-    </div>
+    </main>
     <script src="js/jquery-3.2.0.min.js" charset="utf-8"></script>
     <script src="js/jquery.fullPage.min.js" charset="utf-8"></script>
     <script type="text/javascript">
       $(document).ready(function() {
-        $('#fullpage').fullpage();
+        $('#fullpage').fullpage({
+          //Navigation
+      		anchors:['firstPage', 'secondPage'],
+      		navigation: true,
+      		navigationPosition: 'right',
+      		navigationTooltips: ['Início', 'Resumo', 'O problema', 'O propósito', 'A solução'],
+        });
       });
+      var video = document.getElementById('video');
+      setTimeout(function() {
+        video.play()
+      }, 100);
     </script>
   </body>
 </html>

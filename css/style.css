@@ -71,21 +71,7 @@ a {
 
 #banner {
   height: 100vh;
-  /*background: linear-gradient(to bottom right, #FFC107, #FFB300, #FF8F00, #FF9800);*/
   background: #024A5E;
-}
-
-#banner div {
-  padding-top: 50px;
-  display: -webkit-flex;
-  display: -ms-flex;
-  display: flex;
-  justify-content: center;
-  -ms-align-items: center;
-  align-items: center;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
 }
 
 #moreButton {
@@ -93,44 +79,60 @@ a {
 }
 
 #quickDescription {
-  padding: 100px 5vw;
+  padding: 0 5vw;
   position: relative;
   z-index: 7;
 }
 
 #main {
-  padding: 100px 5vw;
+  padding: 0 5vw;
   position: relative;
 }
 
 #data {
-  padding: 100px 5vw;
+  padding: 0 5vw;
 }
 
 #solution {
-  padding: 100px 5vw;
+  padding: 0 5vw;
+}
+
+#device {
+  position: relative;
+  width: 336px;
+  overflow: hidden;
+  margin: auto;
+}
+
+#device video {
+  position: absolute;
+  z-index: 10;
+  top: 144px;
+  left: 25px;
+  width: 286px;
 }
 
 #deviceFrame {
   /*transform: translate3d(0, 15%, 0);*/
-  width: 300px;
+  width: 336px;
   position: relative;
   z-index: 0;
 }
 
 #banner h1 {
-  padding-top: 50%;
   padding-bottom: 10px;
 }
 
 #banner h1 + a {
   margin-bottom: 10px;
+  color: #fff;
 }
 
 
 section {
   /*background: radial-gradient(farthest-corner at 45px 45px, orange, red);*/
   background: #024A5E;
+  height: 100vh;
 }
 
 section h1 {
