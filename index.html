@@ -26,7 +26,7 @@
       <div class="container">
         <h1>Que tal abrir seu negócio? É só dizer oi ;)</h1>
         <div id="device">
-          <video id="video" src="img/video.mp4" autoplay></video>
+          <video id="video" src="img/chat-working.mp4" autoplay loop></video>
           <img src="img/iphone.svg" alt="Imagem de celular com o chat aberto" id="deviceFrame">
         </div>
       </div>
@@ -92,10 +92,10 @@
     $(document).ready(function () {
       $('#fullpage').fullpage({
         //Navigation
-        anchors: ['firstPage', 'secondPage'],
+        anchors: ['inicio', 'ideia', 'facilitador', 'teAjudamos', 'botup'],
         navigation: true,
         navigationPosition: 'right',
-        navigationTooltips: ['Início', 'Resumo', 'O problema', 'O propósito', 'A solução'],
+        navigationTooltips: ['Início', 'Ideia', 'Facilitador', 'Te ajudamos', 'BotUp']
       });
     });
     var video = document.getElementById('video');
